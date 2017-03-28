@@ -32,7 +32,8 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li class="passive"><a href="#"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
-              <li class="passive"><a href="#about"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> About</a></li>
+
+              <li class="passive"><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> About</a></li>
               <li class="dropdown">
                 <li class="passive"><a href="#" class="dropdown-toggle" data-toggle="dropdown" ><i class="fa fa-book fa-2x" aria-hidden="true"></i> Detail<b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -45,8 +46,7 @@
                   <li><a href="#">Sub 2</a></li>
                 </ul>
                 </li>
-              </li>            
-              <li class="passive"><a href="#"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i> Contact</a></li>
+              </li> 
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -54,16 +54,39 @@
     <!--header-->
 
     <!--body-->
-    <div id="container" style="white-space:nowrap">
-      <div class="jumbotron">
-        <div id="texthomepage" style="display:inline; white-space:nowrap;">
-          <img id="homepic" src="img/logo.png" style="display:inline;">
-          <h1 style="display:inline;">Hello, world!</h1>
-          <p style="display:inline;">...</p>
-          <p style="display:inline;"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+    <div id="container" style="margin-top: 18em;">
+      <div class="bs-example" data-example-id="simple-jumbotron">
+        <div class="jumbotron" style="padding-left: 5em; border-radius: 7px; padding-right: 5em; background-color: black;">
+          <h1 style="color: #eee">How 2 use iPhone</h1>
+          <p style="color: #eee">iPhone is easy to use :D เราจะทำให้การใช้ไอโฟนเป็นเรื่องง่าย</p>
+          <p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+              Learn more
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">About this website</h4>
+                  </div>
+                  <div class="modal-body">
+                    เว็บไซต์ของเรา ถูกสร้างมาเพื่อที่จะแนะนำวิธีการใช้มือถือระบบiOS(หรือiPhone)ในระดับเบื้องต้น เพื่อผู้สูงอายุและผู้ใช้รายใหม่
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </p>
         </div>
       </div>
     </div>
+
     <!--body-->
 
     <!--footer-->
@@ -71,7 +94,11 @@
       <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
           <div class="navbar-text pull-left">
-            <p class="textfooter">Powered by Bootstrap</p>
+            <p class="textfooter">Contract us:
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i><a href="https://github.com/mawinjongkrirattanakul/webmulti60"> Github</a>
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true" ></i><a href="https://www.facebook.com/lieselottezz"> Facebook</a>
+              <i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i> E-mail: anewmilia@gmail.com</p>
+            <p class="textfooter">Website created by Ria · Powered by Bootstrap ©</p>
           </div>
         </div>
       </div>
