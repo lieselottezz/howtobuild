@@ -1,0 +1,23 @@
+body {
+	background-image: url("background2.jpg");
+    background-color: #cccccc;
+}
+
+#container {
+	margin-top: 13em;
+	margin-left: 15em;
+	margin-right: auto;
+}
+
+#homepic {
+	opacity: 1;
+	width: 20%;
+	height: auto;
+}
+
+#texthomepage {
+	margin-top: 10em;
+	margin-left: 1em;
+}
+
+
