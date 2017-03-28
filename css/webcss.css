@@ -1,6 +1,7 @@
 body {
 	background-image: url("bg4.jpg");
     background-color: #cccccc;
+    background-attachment: fixed;
 }
 
 #container {
