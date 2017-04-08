@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,100 +9,94 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/webcss.css">
-  </head>
-  <body>
+</head>
+<body>
     <!--javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!--javascript-->
 
-    <!--header-->
-    <div id="headerhome" style="opacity: 0.93">
-      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          <a class="navbar-brand" href="index.html" style="margin-top: -11.5px;">
-            <h4>
-              <img src="img/pc1.png" width="35px" height="auto">&nbsp;<strong style="color: #333; font-size: 14.5px; background: #ececec; border-color: #ccc; border-radius: 8px;">&nbsp;&nbsp;HOW 2 BUILD&nbsp;&nbsp;</strong>
-            </h4>
-          </a>
+    <div id="wrapper"> 
+        <!-- header -->
+        <div id="header">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html" style="margin-top: -11.5px;">
+                            <h4><img src="img/pc1.png" width="35px" height="auto">&nbsp;<strong class="toptext1">&nbsp;&nbsp;HOW 2 BUILD&nbsp;&nbsp;</strong></h4>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="passive"><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
+                            <li class="passive"><a data-toggle="modal" data-target="#myModal"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> About</a></li>
+                            <li class="passive"><a href="content.html"><i class="fa fa-book fa-2x" aria-hidden="true"></i> Detail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="passive"><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i> Home</a></li>
-            <li class="passive"><a data-toggle="modal" data-target="#myModal"><i class="fa fa-newspaper-o fa-2x" aria-hidden="true"></i> About</a></li>
-            <li class="passive"><a href="content.html"><i class="fa fa-book fa-2x" aria-hidden="true"></i> Detail</a></li>
-          </ul>
+        <!-- content -->
+        <div id="content">
+            <!-- body -->
+            <div id="container">
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                    <div class="jumbotron" style="text-align: center; background-color: black; padding-left: 2.5%;padding-right: 2.5%;">
+                        <h1 id="fade" style="font-size: 52px"><strong>HOW 2 BUILD</strong></h1>
+                        <img src="img/pc1.png" style="position: absolute; top: -15%; width: 220px; height: 220px; transform: translate(-50%, -50%); bottom: auto; opacity: 1;">
+                        <p style="color: #eee">Build your desktop computer ประกอบคอมฯง่ายนิดเดียว</p>
+                        <p style="color: #eee; font-size: 12px">PS. All content in this website are thai language.</p>
+                        <p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-hand-o-right" aria-hidden="true"></i> Getting started!
+                        </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">About this website</h4>
+                        </div>
+                        <div class="modal-body">
+                            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i><b> ภาษาไทย<br></b>
+                            เว็บไซต์ของเราถูกพัฒนามาเพื่อที่จะแนะนำวิธีการใช้มือถือระบบiOS(หรือiPhone)ในระดับเบื้องต้น เพื่อผู้สูงอายุและผู้ใช้สำหรับรายละเอียด กรุณากดปุ่ม Let's go
+                        </div>
+                        <div class="modal-body">
+                            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i><b> English<br></b></b>
+                            We develop this website to guide how to use iPhone in elementary level for new iPhone's user and older person. For more detail, press the let's go button<br>
+                            <b>PS. All content in this website are thai language.</b>
+                        </div>
+                        <img src="img/ty.gif" width="75%" height="75%">
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
+                            <a href="content.html"><button type="button" class="btn btn-primary">Let's go!</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div><!--/.nav-collapse -->
+        <!-- footer -->
+        <div id="footer">
+            <p>Contract us:
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i><a href="https://github.com/mawinjongkrirattanakul"> Github</a>
+                <i class="fa fa-facebook-square fa-2x" aria-hidden="true" ></i><a href="https://www.facebook.com/lieselottezz"> Facebook</a>
+                <i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i> E-mail: anewmilia@gmail.com
+            </p>
+            <p>Picture credit goes to original owner <b>·</b> Website created by Ria <b>·</b> Powered by Bootstrap v3.3.7 & Font Awesome v4.7.0</p>
+        </div>
     </div>
-    <!--header-->
 
-    <!--body-->
-    <div id="container">
-      <div class="bs-example" data-example-id="simple-jumbotron">
-        <div class="jumbotron" style="text-align: center; background-color: black; padding-left: 2.5%;padding-right: 2.5%;">
-          <h1 id="fade" style="font-size: 52px"><strong>HOW 2 BUILD</strong></h1>
-          <img src="img/pc1.png" style="position: absolute; top: -15%; width: 220px; height: 220px; transform: translate(-50%, -50%); bottom: auto; opacity: 1;">
-          <p style="color: #eee">Build your desktop computer ประกอบคอมฯง่ายนิดเดียว</p>
-          <p style="color: #eee; font-size: 12px">PS. All content in this website are thai language.</p>
-          <p>
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-              <i class="fa fa-hand-o-right" aria-hidden="true"></i> Getting started!
-            </button>
-          </p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">About this website</h4>
-          </div>
-          <div class="modal-body">
-            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i><b> ภาษาไทย<br></b>
-            เว็บไซต์ของเราถูกพัฒนามาเพื่อที่จะแนะนำวิธีการใช้มือถือระบบiOS(หรือiPhone)ในระดับเบื้องต้น เพื่อผู้สูงอายุและผู้ใช้สำหรับรายละเอียด กรุณากดปุ่ม Let's go
-          </div>
-          <div class="modal-body">
-            <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i><b> English<br></b></b>
-            We develop this website to guide how to use iPhone in elementary level for new iPhone's user and older person. For more detail, press the let's go button<br>
-            <b>PS. All content in this website are thai language.</b>
-         </div>
-          <img src="img/ty.gif" width="75%" height="75%">
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Back</button>
-            <a href="content.html"><button type="button" class="btn btn-primary">Let's go!</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--body-->
-
-    <!--footer-->
-    <div style="opacity: 0.93">
-      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-        <div class="container">
-          <div class="navbar-text pull-left">
-            <p class="textfooter">Contract us:
-              <i class="fa fa-github fa-2x" aria-hidden="true"></i><a href="https://github.com/mawinjongkrirattanakul"> Github</a>
-              <i class="fa fa-facebook-square fa-2x" aria-hidden="true" ></i><a href="https://www.facebook.com/lieselottezz"> Facebook</a>
-              <i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i> E-mail: anewmilia@gmail.com</p>
-            <p class="textfooter">Picture credit goes to original owner <b>·</b> Website created by Ria <b>·</b> Powered by Bootstrap v3.3.7 & Font Awesome v4.7.0</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--footer-->
-  </body>
+</body>
 </html>
